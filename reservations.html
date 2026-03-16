@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Reservations | Bansi Vihar Restaurant Patna</title>
+  <meta
+    name="description"
+    content="Reserve a table at Bansi Vihar Restaurant in Patna. Book family dinners, group gatherings, and celebrations with our easy reservation form."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Yatra+One&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body class="page-reservations">
+  <header class="site-header">
+    <div class="container nav">
+      <a class="logo" href="index.html">Bansi Vihar <span>Restaurant</span></a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links">Menu</button>
+      <div id="nav-links" class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="about.html">About</a>
+        <a class="active" href="reservations.html">Reservations</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container hero-content">
+        <div class="badge">Reserve Your Table</div>
+        <h1>Book a Family Dining Experience</h1>
+        <p>
+          Secure your table in advance for family dinners, celebrations, or group gatherings
+          in Patna.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-grid">
+        <div class="form-card">
+          <h2>Reservation Form</h2>
+          <p>Fill out the details below and we will confirm your booking shortly.</p>
+          <form class="js-form" aria-label="Reservation form">
+            <div>
+              <label for="name">Full Name</label>
+              <input id="name" name="name" type="text" placeholder="Your name" required />
+            </div>
+            <div>
+              <label for="phone">Phone Number</label>
+              <input id="phone" name="phone" type="tel" placeholder="+91" required />
+            </div>
+            <div>
+              <label for="date">Date</label>
+              <input id="date" name="date" type="date" required />
+            </div>
+            <div>
+              <label for="time">Time</label>
+              <input id="time" name="time" type="time" required />
+            </div>
+            <div>
+              <label for="guests">Number of Guests</label>
+              <select id="guests" name="guests" required>
+                <option value="">Select</option>
+                <option>2</option>
+                <option>4</option>
+                <option>6</option>
+                <option>8</option>
+                <option>10+</option>
+              </select>
+            </div>
+            <div>
+              <label for="requests">Special Requests</label>
+              <textarea id="requests" name="requests" placeholder="Occasion, seating preference, Jain meal..." ></textarea>
+            </div>
+            <button class="btn btn-primary" type="submit">Confirm Reservation</button>
+            <div class="form-success" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+        <div class="info-card">
+          <h3>Group and Event Bookings</h3>
+          <p>
+            Planning a birthday, anniversary, or office dinner? We offer special thalis and
+            pre-set menus for groups of 10 or more.
+          </p>
+          <p><strong>Call:</strong> <a href="tel:+919123456789">+91 91234 56789</a></p>
+          <p><strong>WhatsApp:</strong> <a href="https://wa.me/919123456789">Chat with us</a></p>
+          <p><strong>Best booking time:</strong> 11:00 AM - 9:30 PM</p>
+          <img
+            src="https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?auto=format&fit=crop&w=900&q=80"
+            alt="Celebration dining table"
+            loading="lazy"
+            decoding="async"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <h2>Need a Quick Booking?</h2>
+      <p>Call our team and we will reserve your table instantly.</p>
+      <a class="btn btn-primary" href="tel:+919123456789">Call Restaurant</a>
+      <a class="btn btn-ghost" href="menu.html">View Menu</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>Bansi Vihar Restaurant</h3>
+        <p>Vegetarian family dining with traditional Indian flavors in Patna, Bihar.</p>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <p>Phone: <a href="tel:+919123456789">+91 91234 56789</a></p>
+        <p>Address: Boring Road, Patna, Bihar 800001</p>
+        <p>Email: hello@bansivihar.com</p>
+      </div>
+      <div>
+        <h3>Opening Hours</h3>
+        <p>Monday - Sunday: 11:00 AM - 10:30 PM</p>
+        <p>Best time for family dinners: 7:00 PM - 9:30 PM</p>
+      </div>
+    </div>
+    <div class="footer-bottom">(c) <span id="year"></span> Bansi Vihar Restaurant. All rights reserved.</div>
+  </footer>
+
+  <a
+    class="whatsapp-float"
+    href="https://wa.me/919123456789?text=Hello%20Bansi%20Vihar%20Restaurant%2C%20I%20would%20like%20to%20book%20a%20table."
+    target="_blank"
+    rel="noreferrer"
+  >
+    WhatsApp
+  </a>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
